@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lowkey safe — Support</title>
+  <meta name="description" content="Support and contact for lowkey safe, a local-first password vault for iOS, Android, and desktop.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>lowkey safe</h1>
+      <nav>
+        <a href="index.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="lead">A local-first password vault. Generate, save, and analyze passwords without ever sending data off your device.</p>
+
+      <h2>What it does</h2>
+      <ul class="feature-list">
+        <li><strong>Password generator</strong> — basic, advanced, passphrase, and pronounceable modes.</li>
+        <li><strong>Encrypted local vault</strong> — AES-encrypted storage with the key held in your OS secure enclave.</li>
+        <li><strong>Biometric / PIN lock</strong> — optional re-auth on open and after short background timeouts.</li>
+        <li><strong>Insights</strong> — strength distribution, reuse detection, and similarity warnings.</li>
+        <li><strong>Portable export/import</strong> — encrypted backups can be restored on another device.</li>
+      </ul>
+
+      <h2>Need help?</h2>
+      <p>Send a message below or email <a href="mailto:lowkeysafeapp@gmail.com">lowkeysafeapp@gmail.com</a> directly. We'll usually reply within a few days.</p>
+
+      <form class="contact" action="https://formspree.io/f/mbdqpbje" method="POST">
+        <input type="hidden" name="_subject" value="[lowkey safe support]">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="gotcha" aria-hidden="true">
+          <label for="_gotcha">Leave this field empty</label>
+          <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </main>
+
+    <footer>
+      <a href="privacy.html">Privacy Policy</a>·
+      <a href="terms.html">Terms &amp; Conditions</a>·
+      <a href="mailto:lowkeysafeapp@gmail.com">Contact</a>
+      <p>&copy; Chris Chu</p>
+    </footer>
+  </div>
+</body>
+</html>

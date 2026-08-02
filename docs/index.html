@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>lowkey safe — Support</title>
-  <meta name="description" content="Support and contact for lowkey safe, a local-first password vault for iOS, Android, and desktop.">
+  <title>lowkey safe — Offline password vault for iPhone</title>
+  <meta name="description" content="lowkey safe is a local-first password vault for iPhone. Generate, save, and analyze strong passwords — 100% offline, no account, nothing ever leaves your device.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,14 +12,53 @@
     <header>
       <h1>lowkey safe</h1>
       <nav>
-        <a href="index.html">Support</a>
+        <a href="index.html">Home</a>
+        <a href="#support">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
       </nav>
     </header>
 
     <main>
-      <p class="lead">A local-first password vault. Generate, save, and analyze passwords without ever sending data off your device.</p>
+      <section class="hero">
+        <p class="eyebrow">100% offline · No account · No cloud</p>
+        <h2 class="hero-title">Strong passwords that never leave your phone.</h2>
+        <p class="lead">lowkey safe generates, stores, and analyzes your passwords entirely on your device — AES-encrypted, locked behind Face ID, with nothing ever sent to a server.</p>
+        <p>
+          <a class="store-badge" href="https://apps.apple.com/app/id6762034998" aria-label="Download lowkey safe on the App Store">
+            <svg class="apple" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span><small>Download on the</small>App Store</span>
+          </a>
+        </p>
+      </section>
+
+      <section class="shots">
+        <figure class="shot"><img src="screenshots/generator.png" alt="lowkey safe password generator with strength meter" width="1260" height="2736" loading="lazy"><figcaption>Four ways to generate</figcaption></figure>
+        <figure class="shot"><img src="screenshots/vault.png" alt="Encrypted vault of saved passwords with reuse flags" width="1260" height="2736" loading="lazy"><figcaption>Your encrypted vault</figcaption></figure>
+        <figure class="shot"><img src="screenshots/insights.png" alt="Password insights: strength distribution and reuse detection" width="1260" height="2736" loading="lazy"><figcaption>Spot weak &amp; reused</figcaption></figure>
+      </section>
+
+      <section class="why">
+        <h2>Why lowkey safe</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <h3>Truly offline</h3>
+            <p>No account, no sync servers, no tracking. Your vault lives only on your device — we can't see it, and we can't leak it.</p>
+          </div>
+          <div class="why-card">
+            <h3>Serious encryption</h3>
+            <p>AES-256 with the key held in your iPhone's Secure Enclave, unlocked by Face ID or a PIN.</p>
+          </div>
+          <div class="why-card">
+            <h3>Smarter generation</h3>
+            <p>Random, advanced, passphrase, and pronounceable modes — memorable when you need it, brute-force-proof when you don't.</p>
+          </div>
+          <div class="why-card">
+            <h3>Password Insights</h3>
+            <p>See reused, similar, and weak passwords at a glance — computed entirely on-device.</p>
+          </div>
+        </div>
+      </section>
 
       <h2>What it does</h2>
       <ul class="feature-list">
@@ -30,31 +69,33 @@
         <li><strong>Portable export/import</strong> — encrypted backups can be restored on another device.</li>
       </ul>
 
-      <h2>Need help?</h2>
-      <p>Send a message below or email <a href="mailto:lowkeysafeapp@gmail.com">lowkeysafeapp@gmail.com</a> directly. We'll usually reply within a few days.</p>
+      <section id="support">
+        <h2>Need help?</h2>
+        <p>Send a message below or email <a href="mailto:lowkeysafeapp@gmail.com">lowkeysafeapp@gmail.com</a> directly. We'll usually reply within a few days.</p>
 
-      <form class="contact" action="https://formspree.io/f/mbdqpbje" method="POST">
-        <input type="hidden" name="_subject" value="[lowkey safe support]">
+        <form class="contact" action="https://formspree.io/f/mbdqpbje" method="POST">
+          <input type="hidden" name="_subject" value="[lowkey safe support]">
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required autocomplete="name">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required autocomplete="email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
 
-        <div class="gotcha" aria-hidden="true">
-          <label for="_gotcha">Leave this field empty</label>
-          <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
-        </div>
+          <div class="gotcha" aria-hidden="true">
+            <label for="_gotcha">Leave this field empty</label>
+            <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
 
-        <button type="submit">Send message</button>
-      </form>
+          <button type="submit">Send message</button>
+        </form>
+      </section>
     </main>
 
     <footer>
